@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+	float a,b,sum,diff,mul,div;
+		printf("enter the value of the first number");
+			scanf("%f",&a);
+		printf("enter the value of the second number");
+			scanf("%f",&b);
+		printf("sum=%f\n",a+b);
+		printf("diff=%f\n",a-b);
+		printf("mul=%f\n",a+b);
+	if(b!=0)
+	{
+		printf("div=%f\n",a/b);
+	}
+	else
+	{
+		printf("enter value again");
+	}
+	return(0);
+}
+		
