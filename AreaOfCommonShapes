@@ -1,0 +1,72 @@
+#include<stdio.h>
+
+void main()
+{
+	int shapes;
+	float base,height,lbase,sbase,side,radius,maradius,miradius,area;
+	
+		printf(" 1 --> Parallelogram\n");
+		printf(" 2 --> Trapezoid\n");
+		printf(" 3 --> rhombus\n");
+		printf(" 4 --> Sphere\n");
+		printf(" 5 --> ellipse\n");
+		printf("Enter the number for the desired shape\n");
+		scanf("%f",&shapes);
+	switch(shapes)
+	{
+	case 1:
+			{
+			printf( "Enter values of base and height");
+			scanf ("%f" "%f",&base,&height);
+			area= base*height;
+			printf("area of parallelogram = %f\n",area);
+			break;
+			}
+	case 2:
+            {
+                float a,b,h;
+                printf("Enter lengths of parallel sides: ");
+                scanf("%f %f", &a, &b);
+                printf("Enter Height: ");
+                scanf("%f", &h);
+                float ar = (a+b)*(h/2);
+                printf("Area of the Trapezium is %.2f", ar);
+            break;
+			}
+	case 3:
+            {
+                float l,b;
+                printf("Enter Side: ");
+                scanf("%f", &b);
+                printf("Enter Height: ");
+                scanf("%f", &l);
+                float ar = l*b;
+                printf("Area of the Rectangle is %.2f", ar);
+            
+            break;
+			}
+	case 4:
+			{
+				float r;
+				printf("Enter Radius: ");
+				scanf("%f", &r);
+				float ar = 3.14*r*r;
+				printf("Area of the circle is %.2f", ar); 
+			break;
+			}
+	  case 5:
+        {
+            float a, b;
+            printf("Enter major radius: ");
+            scanf("%f", &a);
+            printf("Enter minor radius: ");
+            scanf("%f", &b);
+            float ar = 3.14*a*b;
+            printf("Area of ellipse is %.2f", ar);
+        break;
+		}
+        
+        default: {printf("Invalid Input");}
+            break;
+	}
+}	
